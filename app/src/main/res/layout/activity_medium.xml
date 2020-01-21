@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5EE6C8"
+    tools:context=".medium">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="1. Android is Developed By"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="64dp"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text="Apple"
+            android:layout_marginLeft="30dp"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="160dp">
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="mes"
+                android:layout_weight="1"
+                android:text="Apple" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="mes2"
+                android:layout_weight="1"
+                android:text="Microsoft" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="mes3"
+                android:layout_weight="1"
+                android:text="Google" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="mes4"
+                android:layout_weight="1"
+                android:text="Android Inc" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+
+            android:text="2. Android is based on which Kernel"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="30dp"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mes5"
+                android:text="Linux" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes6"
+                android:layout_weight="1"
+                android:text="Windows" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes7"
+                android:layout_weight="1"
+                android:text="Mac" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mes8"
+                android:text="Redhat"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Android Web Browser is Based On"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="30dp">
+
+            <RadioButton
+                android:id="@+id/radioButton21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mes9"
+                android:text="Chrome" />
+
+            <RadioButton
+                android:id="@+id/radioButton20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes10"
+                android:layout_weight="1"
+                android:text="Open Source Webkit" />
+
+            <RadioButton
+                android:id="@+id/radioButton19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes11"
+                android:layout_weight="1"
+                android:text="Safari" />
+
+            <RadioButton
+                android:id="@+id/radioButton23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="mes12"
+                android:layout_weight="1"
+                android:text="Firefox" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:text="4. Which media format is not supported by android" />
+
+
+        <RadioGroup
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="30dp">
+
+            <RadioButton
+                android:id="@+id/radioButton29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mes13"
+                android:text="MP4" />
+
+            <RadioButton
+                android:id="@+id/radioButton27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mes14"
+                android:text="AVI" />
+
+            <RadioButton
+                android:id="@+id/radioButton25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mes15"
+                android:text="MIDI" />
+
+            <RadioButton
+                android:id="@+id/radioButton33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mes16"
+                android:text="MPEG" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. In which directory XML layout files are stored"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes17"
+                android:text="/assets" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes18"
+                android:text="/src"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes19"
+                android:text="/res/values"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes20"
+                android:text="/res/layout"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. Which Code used by android is not a open source"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes21"
+                android:text="Video Driver"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes22"
+                android:text="Wifi Driver"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes23"
+                android:text="Device Driver"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes24"
+                android:text="Bluetooth Driver"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. How Many Levels of securities are in Android"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes25"
+                android:text="Android Level Security"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes26"
+                android:text="App and Kernel level security"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes27"
+                android:text="Java Level Security"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes28"
+                android:text="None of the above"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8`. Which of the following does not belong to transitions?"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes29"
+                android:text="View Flipper" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes30"
+                android:text="View Animator"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes31"
+                android:text="View Switcher"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes32"
+                android:text="View Slider"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9. What are the functionalities in AsyncTask in Android"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes33"
+                android:text="OnPreExecution()"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes34"
+                android:text="OnPostExecution()"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:onClick="mes35"
+                android:layout_height="wrap_content"
+                android:text="DoInBackground()"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes36"
+                android:text="OnProgressUpdate()"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10. What does AAPT Stamds for?"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes37"
+                android:text="Android Asset Processing Tool"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes38"
+                android:text="Android Asset Providing Tool"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mes39"
+                android:text="Android Asset Packaging Tool"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:onClick="mse40"
+                android:layout_height="wrap_content"
+                android:text= "Android Asset Programming Technique"/>
+        </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="submit1"
+            android:textSize="20dp"/>
+    </LinearLayout>
+</ScrollView>

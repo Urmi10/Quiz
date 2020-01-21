@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#5EE6C8"
+    tools:context=".Easy">
+
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. What is an activity in Android?"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <RadioGroup
+        android:layout_width="450dp"
+        android:layout_height="230dp"
+        android:layout_marginLeft="20dp"
+       >
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="mes"
+            android:text="Activity performs the actions on the screen" />
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="mess"
+            android:text="Manage the Application content" />
+
+        <RadioButton
+            android:id="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="messa"
+            android:text="Screen UI" />
+
+        <RadioButton
+            android:id="@+id/r4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="messag"
+            android:text="None of the above" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. On which thread services work in android?"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"/>
+    <RadioGroup
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <RadioButton
+            android:id="@+id/r5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="message"
+            android:text="Worker Thread" />
+
+        <RadioButton
+            android:id="@+id/r6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="view"
+            android:text="Own Thread" />
+
+        <RadioButton
+            android:id="@+id/r7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="txt"
+            android:text="Main Thread" />
+
+        <RadioButton
+            android:id="@+id/r8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="text"
+            android:text="None of the above" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="3. What are the functionalities of Binder services in android?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <RadioGroup
+        android:layout_width="450dp"
+        android:layout_height="230dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:id="@+id/r9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ans1"
+            android:text="Binder is responsible to manage the thread while using aidl in android" />
+
+        <RadioButton
+            android:id="@+id/r10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ans2"
+            android:text=" Binder is responsible for marshalling and un-marshalling of the data" />
+
+        <RadioButton
+            android:id="@+id/r11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ans3"
+            android:text="Above all" />
+
+        <RadioButton
+            android:id="@+id/r12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ans4"
+            android:text="None" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="4.  What is the time limit of broadcast receiver in android?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp">
+
+
+        <RadioButton
+            android:id="@+id/r13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ1"
+            android:text="10 seconds" />
+
+        <RadioButton
+            android:id="@+id/r14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ2"
+            android:text="15 seconds" />
+
+        <RadioButton
+            android:id="@+id/r15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ3"
+            android:text="5 seconds" />
+
+        <RadioButton
+            android:id="@+id/r16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ4"
+            android:text="1 hour" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="5. How to get current location in android?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp">
+
+
+        <RadioButton
+            android:id="@+id/r17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ1"
+            android:text="Using with GPRS" />
+
+        <RadioButton
+            android:id="@+id/r18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ2"
+            android:text="Using location provide" />
+
+        <RadioButton
+            android:id="@+id/r19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ3"
+            android:text="Above both" />
+
+        <RadioButton
+            android:id="@+id/r20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ4"
+            android:text="SQLite" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="6. What is APK in android?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp">
+
+
+        <RadioButton
+            android:id="@+id/r21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ1"
+            android:text="Android packages" />
+
+        <RadioButton
+            android:id="@+id/r22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ2"
+            android:text="Android pack " />
+
+        <RadioButton
+            android:id="@+id/r23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ3"
+            android:text="Android packaging kit" />
+
+        <RadioButton
+            android:id="@+id/r24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ4"
+            android:text="None of the above" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="7. How to fix crash using log cat in android?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp">
+
+
+        <RadioButton
+            android:id="@+id/r25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ1"
+            android:text="Gmail" />
+
+        <RadioButton
+            android:id="@+id/r26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ2"
+            android:text="Google Search " />
+
+        <RadioButton
+            android:id="@+id/r27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ3"
+            android:text="log cat contains the exception name along with the line number" />
+
+        <RadioButton
+            android:id="@+id/r28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ4"
+            android:text="None of the above" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="8. What are the JSON elements in android?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp">
+
+
+        <RadioButton
+            android:id="@+id/r29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ1"
+            android:text="integer, boolean" />
+
+        <RadioButton
+            android:id="@+id/r30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ2"
+            android:text="Boolean " />
+
+        <RadioButton
+            android:id="@+id/r31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ3"
+            android:text="Number, string, boolean, null, array, and object" />
+
+        <RadioButton
+            android:id="@+id/r32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ4"
+            android:text="Null" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="9. What is ANR responding time in android?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp">
+
+
+        <RadioButton
+            android:id="@+id/r33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ1"
+            android:text="5 seconds" />
+
+        <RadioButton
+            android:id="@+id/r34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ2"
+            android:text="10 seconds " />
+
+        <RadioButton
+            android:id="@+id/r35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ3"
+            android:text="1 minute" />
+
+        <RadioButton
+            android:id="@+id/r36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ4"
+            android:text="None of the above" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="10. What is off-line synchronization in android?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp">
+
+
+        <RadioButton
+            android:id="@+id/r37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ1"
+            android:text="Synchronization without internet" />
+
+        <RadioButton
+            android:id="@+id/r38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ2"
+            android:text="Background synchronization" />
+
+        <RadioButton
+            android:id="@+id/r39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ3"
+            android:text="Synchronization with internet" />
+
+        <RadioButton
+            android:id="@+id/r40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="answ4"
+            android:text="None of the above" />
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="submit3"
+        android:textSize="20dp"/>
+
+</LinearLayout>
+
+</ScrollView>
